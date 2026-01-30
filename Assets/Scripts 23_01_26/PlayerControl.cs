@@ -26,5 +26,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
 		transform.Translate(move_direction / speed_multipliyer);
 		current_position.x = Mathf.Clamp(transform.position.x, -camera_size.x, camera_size.x);
 		current_position.y = Mathf.Clamp(transform.position.y, -camera_size.y, camera_size.y);
+		transform.position = current_position;
 	}
 }
