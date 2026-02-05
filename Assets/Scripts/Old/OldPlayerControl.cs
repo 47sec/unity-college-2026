@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerControl : MonoBehaviour{
+public class OldPlayerControl : MonoBehaviour{
 	InputAction move;
 	Vector3 camera_size;
 	float current_object_size_x, current_object_size_y;
