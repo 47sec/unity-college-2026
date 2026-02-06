@@ -14,7 +14,6 @@ public class PlayerControl : MonoBehaviour{
 		rigid = GetComponent<Rigidbody2D>();
 	}
 	void Update(){
-		//Debug.Log((int)rigid.linearVelocity.magnitude);
 	}
 	private void FixedUpdate(){
 		move_direction = move.ReadValue<Vector2>();
