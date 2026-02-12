@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 public class PlayerControl : MonoBehaviour{
 	Rigidbody2D rigid;
 	public bool grounded;
-	public float speed_multiplyer, jump_force, max_speed;
+	public float speed_multiplyer, jump_force, max_speed = 5;
 	InputAction move, jump;
 	Vector3 move_direction;
 	void Start(){
@@ -21,7 +21,7 @@ public class PlayerControl : MonoBehaviour{
 		{
 			rigid.AddForceY(jump_force);
 		}
-		if(rigid.linearVelocity.magnitude <= 5) rigid.AddForce(move_direction*speed_multiplyer);
+		if(rigid.linearVelocity.magnitude <= max_speed) rigid.AddForce(move_direction*speed_multiplyer);
 	}
 	private void OnCollisionEnter2D(Collision2D collision){
 		if(collision.gameObject.tag == "Ground") grounded = true;

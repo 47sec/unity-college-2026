@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/HW/you%20got%20a%20style.uss?fileID=7433441132597879392&amp;guid=1f7d54820544b2f43873ac8053338746&amp;type=3#you got a style"/>
+    <ui:VisualElement name="BigContainer" style="flex-grow: 1;">
+        <ui:Label text="&#10;" name="TimeText" selectable="false" focusable="false" emoji-fallback-support="true" class="bigText" style="height: 165px; width: 680px; white-space: nowrap; transform-origin: center; translate: 1232px 6px; font-size: 50px; -unity-text-align: middle-center;"/>
+        <ui:Label text="" enabled="true" name="WinText" style="height: 309px; translate: 0 200px; -unity-text-align: middle-center; font-size: 100px;"/>
+        <ui:Button text="Continue" parse-escape-sequences="false" name="Continue" enabled="true" focusable="true" style="translate: 50% 75%; left: auto; right: auto; transform-origin: center; scale: 1 1; width: 50%; height: 10%; font-size: 30px; text-overflow: clip; display: flex; visibility: visible;"/>
+    </ui:VisualElement>
+</ui:UXML>
