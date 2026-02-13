@@ -1,0 +1,22 @@
+:root {
+}
+
+.timer {
+    font-size: 60px;
+    color: rgb(248, 222, 0);
+}
+
+.winText {
+    -unity-text-align: middle-center;
+    font-size: 80px;
+    top: 25%;
+    position: relative;
+}
+
+.button {
+    top: 40%;
+    width: 50%;
+    height: 25%;
+    left: 25%;
+    font-size: 80px;
+}
