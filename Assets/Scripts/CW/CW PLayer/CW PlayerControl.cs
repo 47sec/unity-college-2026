@@ -17,10 +17,4 @@ public class CWPlayerControl : MonoBehaviour{
 		if(rb.linearVelocity.magnitude <= max_speed)
 		rb.AddForceX(move_direction.x*speed);
 	}
-	//private void OnCollisionEnter2D(Collision2D collision){
-	//	if(collision.gameObject.tag == "Ground") is_grounded = true;
-	//}
-	//private void OnCollisionExit2D(Collision2D collision){
-	//	if(collision.gameObject.tag == "Ground") is_grounded = false;
-	//}
 }
