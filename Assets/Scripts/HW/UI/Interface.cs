@@ -13,15 +13,16 @@ public class Interface : MonoBehaviour
         user_interface = GetComponent<UIDocument>();
         time =  user_interface.rootVisualElement.Q("TimeText") as Label;
         next_level = user_interface.rootVisualElement.Q("Continue") as Button;
-        next_level.RegisterCallback<ClickEvent>(nextLevelClick);
+        //next_level.RegisterCallback<ClickEvent>(nextLevelClick);
     }
     private void OnDisable()
     {
-        next_level.UnregisterCallback<ClickEvent>(nextLevelClick);
+        //next_level.UnregisterCallback<ClickEvent>(nextLevelClick);
     }
     private void nextLevelClick(ClickEvent evt)
     {
-        SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
     private void Update()
     {
